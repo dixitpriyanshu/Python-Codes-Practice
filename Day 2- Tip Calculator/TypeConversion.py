@@ -1,0 +1,5 @@
+# num_char = len(input("What is your name?\n"))
+# new_num_char = str(num_char)
+# print("Your name has "+new_num_char+" characters\n")
+a=str(23)
+print(type(a))
