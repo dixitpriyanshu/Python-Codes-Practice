@@ -1,7 +1,7 @@
 import random
 from art import logo
 
-number = random.randint(1,101)
+number = random.randint(1,100)
 
 print(logo)
 print("Welcome to the Number Guessing Game !!")
