@@ -2,10 +2,10 @@
 def add(*args):
     # print(args[1])
 
-    sum = 0
+    sum_of_numbers = 0
     for n in args:
-        sum += n
-    return sum
+        sum_of_numbers += n
+    return sum_of_numbers
 # print(add(3, 5, 6, 2, 1, 7, 4, 3))
 
 
