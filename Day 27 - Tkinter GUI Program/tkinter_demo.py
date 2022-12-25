@@ -20,7 +20,7 @@ button.pack()
 
 #Entries
 entry = Entry(width=30)
-#Add some text to begin with
+# Add some text to begin with
 entry.insert(END, string="Some text to begin with.")
 #Gets text in entry
 print(entry.get())
