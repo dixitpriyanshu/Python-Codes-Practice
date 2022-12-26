@@ -21,6 +21,7 @@ def generate_password():
     print(f"Your password is: {password}")
     password_entry.delete(0, tk.END)
     password_entry.insert(0, password)
+    print(password)
     pyperclip.copy(password)
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 
