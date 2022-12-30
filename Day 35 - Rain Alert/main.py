@@ -12,15 +12,10 @@ weather_parameters = {
     "lon" : 77.594566,
     "appid" : API_KEY
 }
-alt_weather_parameters = {
-    "lat" : 51.507351,
-    "lon" : -0.127758,
-    "appid" : API_KEY
-}
 
 will_rain = False
 
-response = requests.get(OWM_ENDPOINT, params= alt_weather_parameters)
+response = requests.get(OWM_ENDPOINT, params= weather_parameters)
 response.raise_for_status()
 weather_data = response.json()
 weather_slice = weather_data["list"][:12]
