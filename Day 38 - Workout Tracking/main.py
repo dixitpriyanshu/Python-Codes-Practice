@@ -1,15 +1,15 @@
 import requests
 from datetime import datetime
 
-APP_ID = "227f503d"
-API_KEY = "e667c98a021ab3a44bb94d9cbd664ec3"
+APP_ID = "" # Your APP ID
+API_KEY = "" # Your API Key
 GENDER = "male"
 WEIGHT = 54
 HEIGHT = 172
 AGE = 22
 
 nutritionnix_exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
-sheety_endpoint = "https://api.sheety.co/4d7224b59773f15d1eaf1ecec2a224e5/workoutTracking/workouts"
+sheety_endpoint = "" # Your Sheety Endpoint for post request
 nutritionnix_header = {
     "x-app-id" : APP_ID,
     "x-app-key" :API_KEY
