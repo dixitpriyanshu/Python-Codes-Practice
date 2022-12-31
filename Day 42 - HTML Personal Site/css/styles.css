@@ -1,0 +1,34 @@
+body {
+    background-color: #d8e3e7;
+}
+hr {
+    border-style: dotted none none none;
+    border-width: 5px;
+    border-color: #132c33;
+    width: 8%;
+}
+h1 {
+    color: #126e82;
+
+}
+h1:hover{
+    color: #132c33;
+    transition: color 0.5s;
+}
+h3 {
+    color: #126e82;
+}
+img:hover {
+    width: 200px;
+    transition: width 2s;
+}
+/*************************** CLASS SELECTORS*****************************/
+.bold {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+/*************************** ID SELECTORS*****************************/
+#myPhoto {
+        border-radius: 100%;
+}
