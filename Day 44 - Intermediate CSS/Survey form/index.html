@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="heading" class="text-center">Student Survey Form</h1>
+        <p id="description" class="description text-center">Thank you for taking the time to do this suvrey.</p>
+    </header>
+
+    <div class="container">
+
+    <form id="survey-form" action="">
+        <div class="form-group">
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="Enter your Email" required>
+        </div>
+        <div class="form-group">
+             <label id="age-label" for="age">Age:</label>
+             <input type="number" name="age" class="form-control" id="age" min="16" max="25" placeholder="Enter your age" required>
+        </div>
+        <div class="form-group">
+            <p>Select your year</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select your year</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+              </select>
+        </div>
+        <div class="form-group">
+            <p>What would you prefer:</p>
+            <label><input type="radio" name="prefer" id="online" class="input-radio" value="online" checked>Online classes</label>
+            <label><input type="radio" name="prefer" id="offline" class="input-radio" value="offline">Offline classes</label>
+        </div>
+        <div class="form-group">
+            <p>What do you like most about College life:</p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+                <option disabled selected value>Select an option</option>
+                <option value="attendance">Attendance</option>
+                <option value="projects">Projects</option>
+                <option value="clubs">Clubs</option>
+                <option value="faculty">Faculty</option>
+              </select>
+        </div>
+        <div class="form-group">
+            <p>
+              What would you like to see improved?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+            <label><input name="prefer" value="projects" type="checkbox" class="input-checkbox">Projects</label>
+            <label><input name="prefer" value="easeAttendance" type="checkbox" class="input-checkbox">Ease in Attendance</label>
+            <label><input name="prefer" value="moreClubs" type="checkbox" class="input-checkbox">More Clubs</label>
+            <label><input name="prefer" value="activity" type="checkbox" class="input-checkbox">Activity</label>
+            <label><input name="prefer" value="assignments" type="checkbox" class="input-checkbox">Assignments</label>
+            <label><input name="prefer" value="additionalCourses" type="checkbox" class="input-checkbox">Additional Courses</label>
+        </div>    
+        <div class="form-group">
+            <p>Any Comments:</p>
+            <textarea name="comments" id="comments" class="input-textarea" placeholder="Enter your comments"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+
+        </div>
+
+    </form>
+
+</div>
+</body>
+</html>
