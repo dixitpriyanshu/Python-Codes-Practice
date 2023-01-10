@@ -9,7 +9,11 @@ TWITTER_EMAIL = ""
 TWITTER_PASSWORD = ""
 
 twitter_bot = InternetSpeedTwitterBot(CHROME_DRIVER_PATH)
-twitter_bot.get_internet_speed()
+up, down = twitter_bot.get_internet_speed()
+print(up)
+print(down)
 
+if up < PROMISED_UP or down < PROMISED_DOWN:
+    twitter_bot.tweet_at_provider(TWITTER_EMAIL, TWITTER_PASSWORD)
 
 time.sleep(5)
