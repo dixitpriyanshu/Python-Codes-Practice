@@ -12,5 +12,9 @@ def hello_world():
 def products ():
     return 'This is a product page.'
 
+@app.route("/bye")
+def say_bye():
+    return "Bye"
+
 if __name__ == "__main__":
     app.run(debug= True)
